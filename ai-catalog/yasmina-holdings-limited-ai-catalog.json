@@ -1,0 +1,115 @@
+{
+  "specVersion": "0.1",
+  "host": {
+    "name": "Yasmina",
+    "domain": "yasmina.ai",
+    "description": "Saudi Arabia's first approved embedded insurance platform. An orchestration layer that connects businesses to licensed insurance providers through one API.",
+    "url": "https://yasmina.ai"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:yasmina.ai:docs:api-reference",
+      "displayName": "Yasmina API documentation",
+      "description": "Integration guides and endpoint reference for quoting, issuing policies, and webhooks.",
+      "type": "text/html",
+      "url": "https://docs.yasmina.ai/introduction",
+      "representativeQueries": [
+        "How do I integrate Yasmina insurance into my checkout?",
+        "What endpoints does the Yasmina API expose?",
+        "How do I issue a motor insurance policy through Yasmina?",
+        "How do Yasmina webhooks report policy status changes?"
+      ]
+    },
+    {
+      "identifier": "urn:air:yasmina.ai:auth:credentials-guide",
+      "displayName": "API authentication and registration",
+      "description": "How an organization obtains OAuth 2.0 client credentials and exchanges them for an access token.",
+      "type": "text/markdown",
+      "url": "https://yasmina.ai/auth.md",
+      "representativeQueries": [
+        "How do I authenticate with the Yasmina API?",
+        "How do I get a Yasmina client_id and client_secret?",
+        "Which OAuth grant type does Yasmina use?"
+      ]
+    },
+    {
+      "identifier": "urn:air:yasmina.ai:catalog:api-catalog",
+      "displayName": "API catalog (RFC 9727)",
+      "description": "Linkset naming Yasmina's API documentation resources.",
+      "type": "application/linkset+json",
+      "url": "https://yasmina.ai/.well-known/api-catalog",
+      "representativeQueries": [
+        "Where is the Yasmina API catalog?",
+        "What APIs does Yasmina publish?"
+      ]
+    },
+    {
+      "identifier": "urn:air:yasmina.ai:auth:protected-resource-metadata",
+      "displayName": "Protected resource metadata (RFC 9728)",
+      "description": "Names the partner API as the protected resource, its authorization server, and that tokens are sent in the Authorization header.",
+      "type": "application/json",
+      "url": "https://yasmina.ai/.well-known/oauth-protected-resource",
+      "representativeQueries": [
+        "Which authorization server issues tokens for the Yasmina API?",
+        "How does an agent discover Yasmina's OAuth configuration?"
+      ]
+    },
+    {
+      "identifier": "urn:air:yasmina.ai:mcp:server",
+      "displayName": "MCP server",
+      "description": "Model Context Protocol server over Streamable HTTP. Public tools read the site as structured text; one authenticated tool reports whether a partner access token is accepted by the partner API.",
+      "type": "application/json",
+      "url": "https://yasmina.ai/mcp",
+      "representativeQueries": [
+        "Does Yasmina have an MCP server?",
+        "Which MCP tools does Yasmina expose?"
+      ]
+    },
+    {
+      "identifier": "urn:air:yasmina.ai:skills:discovery-index",
+      "displayName": "Agent skills index",
+      "description": "Published skills covering API authentication, integrating embedded insurance, and reading this site as Markdown. Each entry carries a sha256 digest of the SKILL.md it names.",
+      "type": "application/json",
+      "url": "https://yasmina.ai/.well-known/agent-skills/index.json",
+      "representativeQueries": [
+        "What agent skills does Yasmina publish?",
+        "Is there a skill for authenticating with the Yasmina API?"
+      ]
+    },
+    {
+      "identifier": "urn:air:yasmina.ai:site:llms-txt",
+      "displayName": "Site overview for language models",
+      "description": "Structured summary of Yasmina, its insurance products, industries, and canonical page URLs.",
+      "type": "text/plain",
+      "url": "https://yasmina.ai/llms.txt",
+      "representativeQueries": [
+        "What is Yasmina?",
+        "Which insurance products does Yasmina offer?",
+        "Which industries does Yasmina serve?"
+      ]
+    },
+    {
+      "identifier": "urn:air:yasmina.ai:portal:partner-portal",
+      "displayName": "Partner portal",
+      "description": "Where partners register, complete onboarding, and manage API credentials, policies, and payouts. Human sign-in required.",
+      "type": "text/html",
+      "url": "https://portal.yasmina.ai",
+      "representativeQueries": [
+        "Where do I sign up as a Yasmina partner?",
+        "Where do I manage my Yasmina API credentials?"
+      ]
+    },
+    {
+      "identifier": "urn:air:yasmina.ai:site:pricing",
+      "displayName": "Commercial model",
+      "description": "Revenue-share model: partners pay nothing to integrate, hold no insurance license, and carry no claims liability.",
+      "type": "text/html",
+      "url": "https://yasmina.ai/pricing/",
+      "representativeQueries": [
+        "How much does Yasmina cost?",
+        "How does Yasmina revenue share work?",
+        "Do I need an insurance license to use Yasmina?"
+      ]
+    }
+  ]
+}
